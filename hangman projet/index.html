@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Revolution&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <title>Jeu du Pendu</title>
+</head>
+<body>
+  <div class="machine-ecrire">
+    <div class="section-droite">
+      <h3>Nombre d'Essais</h3> <span id="erreurs">0</span> sur <span id="maxErreurs"></span>
+      <button id="recommencer" onclick="reinitialiserJeu()">REJOUER</button>
+
+    </div>
+
+    <div class="section-centre">
+      <p class="instructions" ><i class="fas fa-gamepad"></i> <i class="fas fa-paw"></i>  <!-- Empreinte d'animal -->
+        <!-- Manette de jeu -->
+        Devinez les animaux :</p>
+      <p id="indice" class="indice">L'indice sera affiché ici</p>
+
+      <p id="motDevine" class="mot-devine">Le mot à deviner s'affiche ici</p>
+
+
+      <!-- Clavier virtuel -->
+      <div class="rang-clavier">
+        <div class="touche" id="a" onclick="gererClic('a')">A</div>
+        <div class="touche" id="z" onclick="gererClic('z')">Z</div>
+        <div class="touche" id="e" onclick="gererClic('e')">E</div>
+        <div class="touche" id="r" onclick="gererClic('r')">R</div>
+        <div class="touche" id="t" onclick="gererClic('t')">T</div>
+        <div class="touche" id="y" onclick="gererClic('y')">Y</div>
+        <div class="touche" id="u" onclick="gererClic('u')">U</div>
+        <div class="touche" id="i" onclick="gererClic('i')">I</div>
+        <div class="touche" id="o" onclick="gererClic('o')">O</div>
+        <div class="touche" id="p" onclick="gererClic('p')">P</div>
+      </div>
+      <div class="rang-clavier">
+        <div class="touche" id="q" onclick="gererClic('q')">Q</div>
+        <div class="touche" id="s" onclick="gererClic('s')">S</div>
+        <div class="touche" id="d" onclick="gererClic('d')">D</div>
+        <div class="touche" id="f" onclick="gererClic('f')">F</div>
+        <div class="touche" id="g" onclick="gererClic('g')">G</div>
+        <div class="touche" id="h" onclick="gererClic('h')">H</div>
+        <div class="touche" id="j" onclick="gererClic('j')">J</div>
+        <div class="touche" id="k" onclick="gererClic('k')">K</div>
+        <div class="touche" id="l" onclick="gererClic('l')">L</div>
+        <div class="touche" id="m" onclick="gererClic('m')">M</div>
+      </div>
+      <div class="rang-clavier">
+        <div class="touche" id="w" onclick="gererClic('w')">W</div>
+        <div class="touche" id="x" onclick="gererClic('x')">X</div>
+        <div class="touche" id="c" onclick="gererClic('c')">C</div>
+        <div class="touche" id="v" onclick="gererClic('v')">V</div>
+        <div class="touche" id="b" onclick="gererClic('b')">B</div>
+        <div class="touche" id="n" onclick="gererClic('n')">N</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
